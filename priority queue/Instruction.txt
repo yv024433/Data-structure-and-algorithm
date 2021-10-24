@@ -1,0 +1,15 @@
+Linked Implementation of a Priority Queue
+
+Topic 13 of the lecture notes discusses the PriorityQueue ADT, generously providing code for a linked implementation. In this exercise, you must extend this code so that it fully implements the CITS2200.PriorityQueue interface. Your implementation should simply store Objects rather than use Java generics, but it will need to provide an iterator to access the elements of the collection. The iterator class must be implemented as an inner class.
+
+Write a class called PriorityQueueLinked that implements a singly linked version of the PriorityQueue interface.
+
+Your priority queue ADT must implement the CITS2200.PriorityQueue interface (that is, the PriorityQueue interface in the CITS2200 package). Fully document your code using javadoc comments.
+
+Warning!Submit your PriorityQueueLinked implementation to the correct Moodle folder.
+
+If submitted before the due date, the system will compile and run your code, estimate your mark, and provide you with feedback. Final marking will occur after the posted due date and is subject to further examination, testing, and plagiarism checks of your code. Note that for security reasons, your code cannot contain any I/O commands, including printing statements. Although the auto-marking program provides you with some feedback, it should not be used as a substitute for your own testing. Indeed, you may be penalised if you make too many submissions.
+
+Note: as the security manager used by the auto-marking program is a little overzealous, it may terminate when constructing and using instances of your inner class. To overcome this, you should make all inner classes and their constructors public, and if any other class refers to variables in an inner class, those variables should also be public.
+
+Write a test program that thoroughly tests each operation of your priority queue ADT to satisfy yourself that your code is working correctly.

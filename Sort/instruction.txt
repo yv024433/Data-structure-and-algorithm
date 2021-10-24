@@ -1,0 +1,12 @@
+I will cover the sorting algorithms this week, you may watch the videos linked below as well:
+
+Insertion Sort part 1 and part 2
+Merge Sort part 1 and part 2
+Quick Sort part 1 and part 2
+In this lab you are required to implement a number of sorting algorithms. You should download the package CITS2200.jar and write a class, Sorter that implements the methods specified in in the interface Sort. The class must be in a file called Sorter.java and a template is provided.
+The work you submit must be your own work, and you are not permitted to work with anyone, help anyone write code, or debug anyone elses code. You may use the help forum if you require assistence, however you should not post source code, or look at anyone elses source code. The submissions will be thoroughly checked for evidence of collusion and plagiarism.
+
+The Sort class requires you to implement three different methods for sorting an array of long integers. These methods are InsertionSort, QuickSort and MergeSort. You must also implement a counting method to compare the number of array assignments each sorting method used. The Sorter class should mainatin a private variable count that is incremented every time an array assignment is performed (eg arr[i]=x;). The reset() method sets the count variable to 0, and getCount() returns its current value. This allows you to see the relative amount of work each method does. The descritpion of the algorithms follows:
+Note that as an automated marker is used you will not be able to include print statements, java.util classes etc in your implementation. However, a test class is available for your convenience.
+
+Submit only the file Sorter.java There is an automated script that will compile and run your code, and estimate your final mark. Please see Labsheet0 for detailed instructions. This feedback ensures that you will not lose marks for small errors, but is no substitute for your own thorough testing. You may check as many times as you like, before you finally submit.

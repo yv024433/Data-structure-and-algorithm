@@ -1,0 +1,26 @@
+Block Implementation of a Stack
+
+As described in the lecture notes, a stack acts as a last-in, first-out (LIFO) buffer: a collection class in which the last element added to the collection is the first element to be removed. Access to elements is via the top of the stack: the push operation adds to the top of the collection, hiding the previous top element on the stack, while the pop operation removes the top element, revealing the previously concealed top element.
+
+Write a block implementation of a stack called StackBlock. Your stack should contain the following public methods:
+
+StackBlock(s): create an empty stack of size s
+
+isEmpty(): return true iff the stack is empty, false otherwise
+
+isFull(): return true iff the stack is full, false otherwise
+
+push(o): push Object o onto the top of the stack, or throw an Overflow exception if the stack is full
+
+examine(): return the Object on top of the stack, or throw an Underflow exception if the stack is empty
+
+pop(): remove and return the Object on the top of the stack, or throw an Underflow exception if the stack is empty
+
+Your stack ADT must implement the CITS2200.Stack interface (that is, the Stack interface in the CITS2200 package). Fully document your code using javadoc comments.
+
+Warning!Check your StackBlock implementation (Please see Labsheet 0 for detailed instructions on how to check your solution
+
+If submitted before the due date, the system will compile and run your code, estimate your mark, and provide you with feedback. Final marking will occur after the posted due date and is subject to further examination, testing, and plagiarism checks of your code. Note that for security reasons, your code cannot contain any I/O commands, including printing statements. Although the auto-marking program provides you with some feedback, it should not be used as a substitute for your own testing.
+
+Write a test program that thoroughly tests each operation of your stack ADT to satisfy yourself that your code is working correctly.
+

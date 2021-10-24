@@ -1,0 +1,17 @@
+An Implementation of an immutable binary tree
+
+a. The abstract class BinaryTree in the CITS2200 package represents an immutable binary tree. The class is generic, and has been written leaving two methods as abstract: equals and iterator. You should write a subclass BinTree that provides these methods, using the methods provided by BinaryTree. The equals method should override the equals method that all objects have and return true if both binary trees have exactly the same structure. The iterator method should provide an instance of CITS2200.Iterator that returns every element stored in the tree exactly once. The order the elements are return isn't important. Both the equals method and the iterator will have to traverse the tree, which means that they should visit every node. Topic 12 of the lecture notes has some suggestions on how this may be done.
+
+You should also supply two constructors for the BinTree.class. These constructors should contain the code:
+
+public BinTree(){ super(); }
+
+public BinTree(E item, BinaryTree b1, BinaryTree b2){ super(item,b1,b2); }
+
+(This is to allow the automarker to function correctly. If you would prefer not to use generics you may replace the references to E in the second constructor with Object.
+
+b.To tell whether two trees are equal, we need to check that they are both BinaryTrees (hint, use instanceof, and check they are not null), the items stored at the root of each tree are equal (possibly both null), the left subtrees of each tree are equal and the right subtrees of each tree are equal. A recursive method would work well here.
+
+There are a number of ways for the iterator to operate. It could build a backing queue (a linked or block implementation of a queue) and traverse the tree enqueueing every element. Alternatively it could perform a bredth first traversal of the tree as the user calls the next method. That is, it could maintain a queue of binary trees, and start with the BinaryTree as the only element on the queue. Each time next is called, the head of the queue is dequeued, its two children are enqueued (provided they're not empty) and the item stored in the head of the queue is returned. Fully document your code using javadoc comments.
+
+Warning!Submit your BinTree implementation to the correct Moodle folder.

@@ -1,0 +1,6 @@
+Use the Graph, class provided on the unit web-page, to write a breadth-first search algorithm and depth first search algorithm for directed graphs (as described in the lecture notes). The interface Search is provided and you should implement it as a class SearchImp. You should complete the following methods:
+The method getConnectedTree should output an array specifying the parent vertex for each vertex (or -1 if there is no parent), assuming a Breadth First Search.
+The method getDistances should output an array specifying the distance each vertex is from the starting vertex, or -1 if it is not reachable.
+In the method, getTimes you should, assuming a depth first search, output the start and finish times for each vertex. Given that the graph G has n vertices, the method getTimes(G,S) should return an n × 2 array of integers. For example. if a = getTimes(G,S) then the start time for vertex i is a[i][0] and the end time for vertex i is a[i][1].
+Fully document your code using javadoc comments.
+Warning!Submit your SearchImp implementation to Moodle.

@@ -1,0 +1,15 @@
+Linked Implementation of a List
+
+Topic 5 of the lecture notes discusses a singly-linked implementation of the list ADT. Code was provided for the ListLinked, isEmpty, beforeFirst, next, previous, and insertBefore methods.
+
+Write a class called ListLinked that completes the ADT, writing constant time methods for all operations given in the specification of the list ADT except the previous method (recall, you can't complete the previous method to run in constant time!).
+
+Use the WindowLinked class found in the DAT package to complete this task.
+
+Your list ADT must implement the CITS2200.List interface (that is, the List interface in the CITS2200 package). Fully document your code using javadoc comments.
+
+Warning!Submit your ListLinked implementation to the correct Moodle folder.
+
+If submitted before the due date, the system will compile and run your code, estimate your mark, and provide you with feedback. Final marking will occur after the posted due date and is subject to further examination, testing, and plagiarism checks of your code. Note that for security reasons, your code cannot contain any I/O commands, including printing statements. Although the auto-marking program provides you with some feedback, it should not be used as a substitute for your own testing.
+
+Write a test program that thoroughly tests each operation of your list ADT to satisfy yourself that your code is working correctly.
